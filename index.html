@@ -43,15 +43,54 @@
            <div id="webEditors" class="stack panel card">
             <div class="row">
                 <h2>HTML / CSS  / JS</h2>
+                <div class="row">
+                    <button class="btn ok" id="runWeb">Run</button>
+                    <button class="btn-secondary" if="openPreview">Open preview in new Window</button>
+                </div>
             </div>
+
+            <div class="tabs" id="webTabs" role="tablist" aria-label="web editors">
+                <button class="tab active" role="tab" aria-selected="true" tabindex="0" data-pane="html">HTML 5</button>
+                <button class="tab active" role="tab" aria-selected="false" tabindex="-1" data-pane="CSS">CSS</button>
+                <button class="tab active" role="tab" aria-selected="false" tabindex="-1" data-pane="js">Javascript</button>
+            </div>
+
+            <div class="editor-wrap" data-pane="html">
+                <div class="editor" id="ed_html"></div>
+            </div>
+
+            <div class="editor-wrap" data-pane="css" hidden>
+                <div class="editor" id="ed_css"></div>     <!-- ed here stands for editor-->
+            </div>
+
+            <div class="editor-wrap" data-pane="js" hidden>
+                <div class="editor" id="ed_js"></div>     <!-- ed here stands for editor-->
+            </div>
+
+            <div class="stack">
+                <h3>Preview</h3>
+                <iframe id="preview" class="preview" sandbox="allow-scripts allow-same-origin allow-modals allow-forms"></iframe>
+            </div>
+
            </div>
+
         </section>
 
+        <aside class="card panel stack">
+            <h2>Output</h2>
+            <div id="output" class="out" aria-live="polite"></div>
+            <div class="row">
+                <button class="btn warn" id="runTests">Run with tests</button>
+                <button class="btn-secondary">Clear logs</button>
+            </div>
+            <h3>Notes</h3>
+            <ul class="muted">
+                <li>Everything running ont he browser is in a sandbox.</li>
+                <li>You may save the work as a JSOn file and restore it back onto the browser code editor.</li>
+                
+            </ul>
+        </aside>
 
-
-        <h2>Output</h2>
-
-        
     </main>
 </body>
 </html>
