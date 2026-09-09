@@ -1,0 +1,14 @@
+:root{
+    --bg: red;
+    --body-bg: blue;
+    --panel: #000000;
+    --muted: #8b93a7;
+    --txt: purple;
+    --brand: pink;
+    --brand-2: black;
+    --ok: yellow;
+    --warn: yellow;
+    --err: red;
+    --radius: 18px;
+    --gap: 14px;
+}
