@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Hosted Code Editor</title>
+</head>
+<body>
+    <header>
+        <div class="container row">
+
+            <div class="brand">
+                <div class="logo"></div>
+                <div class="title">Browser Code Editor</div>
+            </div>
+
+            <div class="row">
+                <button class="btn secondary" id="saveBtn" title="Save Work"><span>Save</span></button>
+                <button class="btn secondary" id="loadBtn" title="load work file">Load file</button>
+                <input id = "openFile" type="file" accept="application/json" hidden > 
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <aside class="card stack panel">
+            <h2>Ongoing Tasks</h2>
+            <textarea id="assignment" class="text" placeholder="Write the task description here..."></textarea>
+            
+            <div class="stack">
+                <label for="textArea">Validation tests (.js only - optional)</label>
+                <textarea id="textArea" class="text" placeholder="Write simple tests here"></textarea>
+            </div>
+
+            <div class="muted">
+                Tip: <span class="kbd">Ctrl</span> + <span class="kbd">S</span> to save, 
+                <span class="kbd">Ctrl</span> + <span class="kbd">Enter</span> to run.
+            </div>
+
+        </aside>
+
+        <section class="stack" id="web-only">
+           <div id="webEditors" class="stack panel card">
+            <div class="row">
+                <h2>HTML / CSS  / JS</h2>
+            </div>
+           </div>
+        </section>
+
+
+
+        <h2>Output</h2>
+
+        
+    </main>
+</body>
+</html>
